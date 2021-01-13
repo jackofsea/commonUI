@@ -5,8 +5,8 @@ package com.huanhai.snake;
  * @version 1.0
  * @date 2021-01-13 15:57
  **/
-public abstract class AbstractSnake {
-    public int x;
-    public int y;
+public abstract class AbstractSnake implements ISnake {
+    public int x=10;
+    public int y=10;
     abstract void move();
 }

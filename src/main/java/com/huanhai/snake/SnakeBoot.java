@@ -6,4 +6,7 @@ package com.huanhai.snake;
  * @date 2021-01-13 16:03
  **/
 public class SnakeBoot {
+    public static void main(String[] args) {
+        FrameClient.createWindow();
+    }
 }

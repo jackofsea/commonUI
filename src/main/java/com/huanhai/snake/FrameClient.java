@@ -14,6 +14,7 @@ public class FrameClient {
     private static int height=900;
     private static  String title="贪吃蛇";
     private static JFrame  frame=new JFrame("贪吃蛇");
+    private static JPanel snake=new SnakePanel(new Snake());
    public FrameClient(){}
 
     public static void createWindow(){
@@ -27,6 +28,7 @@ public class FrameClient {
         panel.setSize(300,400);
         panel.add(addStartButton());
         panel.add(addExitButton());
+        frame.add(snake,BorderLayout.CENTER);
         frame.add(panel,BorderLayout.SOUTH);
 
 
@@ -37,7 +39,8 @@ public class FrameClient {
         button.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("开始游戏");
+                Thread t=new Thread(new SnakeTask(snake));
+                t.start();
             }
         });
         return button;
@@ -52,11 +55,6 @@ public class FrameClient {
             }
         });
         return button;
-    }
-
-    public static void main(String[] args) {
-        FrameClient.createWindow();
-
     }
 
 }
