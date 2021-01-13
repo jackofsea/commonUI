@@ -20,4 +20,28 @@ public class Snake extends AbstractSnake {
         x+=dx;
         y+=dy;
     }
+
+    @Override
+    void up() {
+       dx=0;
+       dy=5;
+    }
+
+    @Override
+    void down() {
+        dx=0;
+        dy=-5;
+    }
+
+    @Override
+    void left() {
+        dx=-5;
+        dy=0;
+    }
+
+    @Override
+    void right() {
+        dx=5;
+        dy=0;
+    }
 }

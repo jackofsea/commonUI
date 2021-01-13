@@ -9,4 +9,8 @@ public abstract class AbstractSnake implements ISnake {
     public int x=10;
     public int y=10;
     abstract void move();
+    abstract void up();
+    abstract void down();
+    abstract void left();
+    abstract void right();
 }

@@ -17,7 +17,6 @@ public class SnakeTask implements Runnable{
     public void run() {
       while (true){
           snakePanel.repaint();
-          System.out.println("移动中");
           try {
               TimeUnit.MILLISECONDS.sleep(200);
           } catch (InterruptedException e) {
