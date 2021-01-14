@@ -1,4 +1,4 @@
-package com.huanhai.snake;
+package com.huanhai.snake.domain;
 
 /**
  * @author 覃波
@@ -8,9 +8,6 @@ package com.huanhai.snake;
 public abstract class AbstractSnake implements ISnake {
     public int x=10;
     public int y=10;
-    abstract void move();
-    abstract void up();
-    abstract void down();
-    abstract void left();
-    abstract void right();
+    public int step=10;
+
 }

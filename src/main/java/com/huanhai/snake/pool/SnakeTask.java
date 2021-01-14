@@ -1,4 +1,4 @@
-package com.huanhai.snake;
+package com.huanhai.snake.pool;
 
 import javax.swing.*;
 import java.util.concurrent.TimeUnit;
@@ -18,7 +18,7 @@ public class SnakeTask implements Runnable{
       while (true){
           snakePanel.repaint();
           try {
-              TimeUnit.MILLISECONDS.sleep(200);
+              TimeUnit.MILLISECONDS.sleep(300);
           } catch (InterruptedException e) {
               e.printStackTrace();
           }

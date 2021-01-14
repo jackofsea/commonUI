@@ -1,4 +1,4 @@
-package com.huanhai.snake;
+package com.huanhai.snake.domain;
 
 import java.awt.*;
 import java.awt.geom.Ellipse2D;

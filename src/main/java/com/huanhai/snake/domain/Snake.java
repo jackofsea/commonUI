@@ -1,4 +1,4 @@
-package com.huanhai.snake;
+package com.huanhai.snake.domain;
 
 import java.awt.geom.Ellipse2D;
 
@@ -16,32 +16,32 @@ public class Snake extends AbstractSnake {
         return new Ellipse2D.Double(x, y, 15, 15);
     }
     @Override
-    void move() {
+    public void move() {
         x+=dx;
         y+=dy;
     }
 
     @Override
-    void up() {
+    public void up() {
        dx=0;
-       dy=5;
+       dy=-step;
     }
 
     @Override
-    void down() {
+    public void down() {
         dx=0;
-        dy=-5;
+        dy=+step;
     }
 
     @Override
-    void left() {
-        dx=-5;
+    public void left() {
+        dx=-step;
         dy=0;
     }
 
     @Override
-    void right() {
-        dx=5;
+    public void right() {
+        dx=step;
         dy=0;
     }
 }

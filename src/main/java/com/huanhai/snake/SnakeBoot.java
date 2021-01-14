@@ -1,5 +1,7 @@
 package com.huanhai.snake;
 
+import com.huanhai.snake.main.FrameClient;
+
 /**
  * @author 覃波
  * @version 1.0
